@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588321007092",
+    "project_id": "wirayut-expo-playground",
+    "storage_bucket": "wirayut-expo-playground.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588321007092:android:844738e8824a0a438785a1",
+        "android_client_info": {
+          "package_name": "wirayut.expoplayground.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588321007092-9b0tu526m23b3io1p72viou95a0dmvi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDuERwez16qKHoWxJJxSftFf23Hu82tZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588321007092-9b0tu526m23b3io1p72viou95a0dmvi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

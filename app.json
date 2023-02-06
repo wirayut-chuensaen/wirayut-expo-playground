@@ -18,16 +18,55 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "wirayut.expoplayground.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "buildNumber": "1",
+      "config": {},
+      "infoPlist": {
+        "NSCameraUsageDescription": "This permission is required by the app to take receipt photo in order to upload to the backend.",
+        "NSLocationWhenInUseUsageDescription": "This application requires the permission of the current location of the user for the convenience of shipping.",
+        "NSPhotoLibraryAddUsageDescription": "This permission is required by the app to save receipt photo to the photo library.",
+        "NSPhotoLibraryUsageDescription": "This permission is required by the app to upload receipt photo to the backend.",
+        "NSRemindersUsageDescription": "This permission is not needed by the app, but it is required by an underlying API. If you see this dialog, contact us."
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "wirayut.expoplayground.app",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "CAMERA_ROLL",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "LOCATION",
+        "VIBRATION"
+      ],
+      "config": {}
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/app_icon.png",
+          "sounds": [
+            "./assets/sounds/message_beep.wav"
+          ],
+          "color": "#E87EA1"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cadfe907-6416-4f3f-8c50-0d28ef4acbad"
+      }
     }
   }
 }

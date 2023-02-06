@@ -26,7 +26,7 @@ export default function Main() {
 			if (!__DEV__) {
 				const update = await Updates.checkForUpdateAsync();
 				if (update.isAvailable) {
-					setUpdatingText('New updates available.')
+					setUpdatingText('New updates available')
 					await Updates.fetchUpdateAsync()
 					Updates.reloadAsync()
 				}
